@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>KeDa Duck</title>
+		<link rel="stylesheet" href="css/base.css">
+	</head>
+	<body>
+		<div class="nav-bar">
+			<a href="#info" class="nav-info label">Duck Keda</a>
+			<a href="#blog" class="nav-blog label">博客</a>
+			<a href="#edu" class="nav-edu label">教育</a>
+			<a href="#hobby" class="nav-hobby label">爱好</a>
+		</div>
+		<div class="info" id="info">
+			<p>你好呀！<br>我是Keda Duck！</p>
+		</div>
+		<div class="hobby" id="hobby">
+			<p class="sub-title">爱好</p>
+			<ul class="hbs">
+				<li class="running" style="background-color: #e8e9ff;">
+					<p class="sports"><span>跑步</span>发泄压力，得到灵感，跑步也是一种生活方式！</p>
+				</li>
+				<li class="badminton" style="background-color: #fff7e8;">
+					<p class="sports"><span>羽毛球</span>抬头看球，架拍，引拍，击球，收拍，一气呵成，真不愧是我。。。的训练目标！</p>
+				</li>
+				<li class="pingpong" style="background-color: #e0fef7;">
+					<p class="sports"><span>乒乓球</span>我该用直拍呢，还是横拍呢？</p>
+				</li>
+				<li class="pokemon">
+					<video width="528" height="297" autoplay="autoplay" loop muted>
+						<source src="video/宝可梦，美好的一天.mp4" type="video/mp4"></source>
+						当前浏览器不支持 video 直接播放
+					</video>
+				</li>
+				<li class="reading clearfix" style="background-color: #99CCCC;">
+					<span class="valign"></span>
+					<div class="box">
+						<div class="books">
+							<img class="cBook" src="img/牧羊少年的奇幻之旅.jpeg" alt="">
+							<img class="nBook" src="img/我与地坛.jpeg" alt="">
+							<button type="button" onclick="shiftBook()"> > </button>
+						</div>
+						<div class="outline">
+							读书多了，容颜自然改变。许多时候，自己可能以为许多看过的书籍都成过眼烟云，不复记忆，其实他们仍是潜在的。在气质里，在谈吐上，在胸襟的无涯。当然，也能显露在生活和文字中。
+							<p>——三毛</p>
+						</div>
+						<div class="content">
+							<h3>牧羊少年的奇幻之旅</h3>
+							<h4>保罗·柯艾略</h4>
+						</div>
+					</div>
+				</li>
+				<li class="sibling"></li>
+			</ul>
+		</div>
+		<div class="edu" id="edu">
+			<p class="sub-title">教育</p>
+			<div class="school">
+				<div class="njust">
+					<img src="img/NJUST.png" alt="">
+					<p class="xf">团结、献身、求是、创新</p>
+				</div>
+				<div class="myedu">
+					<h2>A NJUSTer</h2>
+					<p>
+						我是一名来自南京理工大学的大二的学生，我的家乡是湖南邵阳，那里依山傍水，永远是我最熟悉的地方。<br>
+						当前，我正在学习的是计算机科学与技术专业，不断更新的计算机语言与前端技术，让我着迷。这里学习气氛浓厚，催人奋进。<br>
+						在南理工就读，感受其独特军工文化，在此不断充实与提升自己，不疾不徐，为南理工增彩。<br>
+						我<span style="color: hotpink;" onmouseover="loveColor()" onmouseout="easeColor()">❤</span>南理!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="blog" id="blog">
+			<p class="sub-title">博客</p>
+			<ul class="blog-box">
+				<a href="javascript:void(0)"><li>
+					<div><img src="img/blog1.jpg" alt=""></div>
+					<p class="title">Attributed Graph Clustering via Adaptive Graph Convolution 论文笔记</p>
+					<p class="content">
+						(1) 本文所提出的AGC是从图信号处理谱图理论的角度来理解GNN并增强了聚类效果
+						(2) 本文所涉及的AGC可以自适应的选择高阶信息的阶数
+					</p>
+				</li></a>
+				<a href="javascript:void(0)"><li>
+					<div><img src="img/blog2.jpg" alt=""></div>
+					<p class="title">Effective Training Strategies for Deep Graph Neural Networks 论文笔记</p>
+					<p class="content">
+						这篇文章的主要贡献是提出了一种归一化的方法，相比于BatchNorm在具有高方差特征的节点上表现很差的现象，
+						文章提出了一种节点归一化的方案：通过其自身的均值和标准差对每个节点的嵌入进行标准化，起到了减少特征相关性和增加模型平滑性的目的。
+					</p>
+				</li></a>
+				<a href="javascript:void(0)"><li>
+					<div><img src="img/blog3.jpg" alt=""></div>
+					<p class="title">DeepWalk: Online Learning of Social Representations 论文笔记</p>
+					<p class="content">
+						论文贡献：
+						(1) 使用随机游走的方法学习到的顶点表示，会更加具有鲁棒性。
+						(2) deepwalk甚至可以在只给出部分网络的情况下，学习到更好的顶点表示。
+						(3) 使用这种方法更加有利于并行化。
+					</p>
+				</li></a>
+			</ul>
+		</div>
+		<div id="footer">
+			<a href="mailto:bang_kok@163.com"><div class="chat">
+				<p>Let's talk</p>
+				<span></span>
+			</div></a>
+			<div class="link">
+				<p>
+					&copy;&nbsp;2021
+					<a href="https://space.bilibili.com/478807547/" target="_blank">bilibili</a>
+					<a href="https://www.zhihu.com/people/andrew-49-60-69" target="_blank">Zhihu</a>
+					<a href="https://github.com/Auto-Andrew" target="_blank">GitHub</a>
+				</p>
+			</div>
+		</div>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
