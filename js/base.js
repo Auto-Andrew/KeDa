@@ -40,12 +40,6 @@ $(window).scroll(function(){
 	else if(scrollS > 300)
 		p.style.opacity = 0;
 	windowTop = scrollS;
-	
-	var obj = document.querySelector(".hobby .hbs .running");
-	console.log(obj.getBoundingClientRect().top + 100 + " " + $(window).height());
-	if(obj.getBoundingClientRect().top + 100 <= $(window).height())
-		
-	
 })
 $(".label").bind("click touch",function(){
 	$('html,body').animate({scrollTop: ($($(this).attr('href')).offset().top)}, 500);
