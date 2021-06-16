@@ -20,7 +20,8 @@ li{
 }
 .nav-bar{
 	background-color: white;
-	width: 1484px;
+	/* width: 1484px; */
+	width: 97%;
 	height: 68px;
 	/* box-shadow: 0 2px 15px rgb(227,227,227); */
 	/* position: fixed; */
@@ -128,7 +129,8 @@ li{
 	opacity: 0.5;
 }
 .sub-title{
-	width: 1097px;
+	/* width: 1097px; */
+	width: 72%;
 	margin: 0 auto;
 	padding-top: 85px;
 	padding-bottom: 67px;
@@ -161,7 +163,8 @@ li{
 	z-index: 0;
 }
 .hobby .hbs{
-	width: 1097px;
+	/* width: 1097px; */
+	width: 72%;
 	margin: 0 auto;
 }
 .hobby .hbs li{
@@ -410,7 +413,8 @@ li{
 	transition: background-color .3s;
 }
 .edu .school{
-	width: 1097px;
+	/* width: 1097px; */
+	width: 72%;
 	height: 300px;
 	margin: 0 auto;
 	/* background-color: aqua; */
